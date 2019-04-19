@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Bangers|Bitter" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <title>Comic Book Finder</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/marvel_logo.png" />
+ 
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+
+      <h1 class="display-4 title animated tada shadow">Comic Book Finder</h1>
+      <p class="lead animated bounceInUp delay-2s shadow">We'll tell you which comic books to read to find your favorite characters!</p>
+      <p><a class="btn btn-danger btnHover:hover btnHover:active" id="title-button" href="#" role="button">For Full Effect</a></p>
+
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- column 1 on the left -->
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <!-- 3 rows -->
+        <!-- <div class = "card my-2">
+          <div class = "card-body-2"> -->
+        <div class="row my-3">
+          <div class="col-sm-9 col-md-9">
+            <input class="form-control" type="text" placeholder="Search by character" aria-label="Search" id = "characterSearch">
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <button type="submit" class="btn btn-light" id="submit-button">Submit</button>
+          </div>
+        </div>
+
+        <!-- </div>
+        </div> -->
+        <div class="row my-2">
+          <!-- movie buttons -->
+          <div class="card">
+            <div class="card-header shadow">
+              <h3>Choose a Movie</h3>
+            </div>
+            
+            <div class="card-body-3" id="movie-buttons">
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-2">
+
+          <div class = "card ">
+            <div class = "card-header shadow">
+              Movie Information
+
+            </div>
+            <div class="card-body" id="movie-info">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- end column -->
+
+      <!-- column 2 on the right -->
+      <div class="col-sm-12 col-lg-8 col-md-12" id="right-card">
+        <div class="card my-3">
+          <div class="card-header shadow">
+            <h3>Comic Book Info</h3>
+          </div>
+          <div class="card-body-4">
+            <div row id="character-name" class="text-center">
+              <br>
+              <p id="character-byline">
+              </p>
+              <!-- character image will go here -->
+
+            </div>
+            <div row>
+              <div class="row my-2">
+                <div id="image" class="col-sm-12 col-md-3">
+                  <!-- character image -->
+                  <img class="image-2 border border-dark" src="assets/images/marvel-background.jpg"
+                    alt="character image">
+                </div>
+
+                <div id="comics" class="col-sm-12 col-md-9">
+                  <h5>Bio:</h5>
+                  <div row id="bio" class="my-2">
+                    <!-- bio will go here from API -->
+
+                    A short summary of the comic book character the user has selected.
+
+                  </div>
+
+
+                  <div row id="pictures" class="my-2">
+                    <!-- pictures of comics will go here -->
+                    <h5>Comic Book Info:</h5>
+                    Images of the various comic books in which the selected character appears.
+                  </div>
+                  
+                </div>
+
+              </div>
+              <br>
+              <div row>
+                <div class = "row my-2">
+                  <div id="first-issue-cover" class="col-sm-12 col-md-3">
+                 <!--first issue cover -->
+                    <img class="image-2 border border-dark" src="assets/images/marvel-background.jpg" alt="first issue cover">
+                  </div>
+                  <div id="first-issue" class="col-sm-12 col-md-9">
+                      <h5>First Issue:</h5>
+                      <div row id="first-issue-info" class="my-2">
+                        <!-- bio will go here from API -->
+                        <div id="issue-date"></div> 
+                        <div id="issue-name"></div>  
+                        Information about the first issue that character appeared in.
+                        
+                      </div>
+                      <div id="link"></div>
+                </div>
+              </div>
+            </div>
+
+      </div>
+      <!-- end column -->
+    </div>
+  </div>
+  
+
+  
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
